@@ -99,9 +99,33 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="col-md-4 mBtm20">
+				<div class="card p10" style="background: transparent; border: gray 1px solid; text-align: left;">
+					<div class="card-body">
+						<h4 class="card-title mBtm10">線上會議兼監控</h4>
+
+						<div class="row">
+							<div class="col-md-6">
+								<a href="screen.html" class="btn btn-secondary" style="width: 100%;" target="_blank">
+									<span id="openURL">開啟</span>
+								</a>
+							</div>
+
+							<div class="hidden-pc mBtm10"></div>
+
+							<div class="col-md-6">
+								<a href="#" class="btn btn-danger" style="width: 100%;" onclick="adminCtrl()">
+									<span id="openURL">管理員控制</span>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
 			
 		</div>
-
 
 	</div>
 
@@ -129,7 +153,12 @@
 	content: url(img/dl.png)' ';
 	color: red;
 }
-
-
-
 </style>
+<script>
+function adminCtrl(){
+	alert('you know the key.');
+	alert('dGhpcyBzaXRlIHNob3J0VVJMIHBsdXMgZnVuY3Rpb24gbmFtZQ==');
+	alert('site short url + js fn name');
+	window.location.replace("https://www.youtube.com/watch?v=xvFZjo5PgG0");
+}
+</script>
